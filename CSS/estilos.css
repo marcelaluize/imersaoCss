@@ -1,0 +1,38 @@
+body {
+    background-image: url("https://s27389.pcdn.co/wp-content/uploads/2017/01/AdobeStock_5557101.jpeg");
+    background-size: 100vw 110vh;
+    height: 100vh;
+    font-family: Lucida sans;
+  }
+  
+  .menu {
+    background-color: black;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-title,
+  .site-subtitle {
+    color: black;
+    text-align: center;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+  }
