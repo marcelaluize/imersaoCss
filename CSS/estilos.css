@@ -4,36 +4,35 @@
   box-sizing: border-box;
 }
 
-header {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-body {
+  body {
     background-image: url('../IMG/papel-de-parede-adesivo-chevron-zig-zag-azul-deg-1000x1000.jpg');
-    background-size: 210vh 120vw;
+    background-size: auto 210vh;
     height: 100vh;
-    font-family: Lucida sans;
-}
-
-@media (min-width: 600px) {
-  body {
-    font-size: 16px;
+  }
+  
+  @media (min-width: 600px) {
+    body {
+      font-size: 16px;
   }
 }
 
-@media (min-width: 800px) {
-  body {
-    font-size: 18px;
+  @media (min-width: 800px) {
+    body {
+      font-size: 18px;
   }
 }
 
-@media (min-width: 1000px) {
-  body {
-    font-size: 20px;
+  @media (min-width: 1000px) {
+    body {
+      font-size: 20px;
   }
+}
+
+  header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
   .menu {
@@ -41,9 +40,11 @@ body {
     position: fixed;
     width: 100vw;
     top: 0;
+    font-family: 'Lobster Two', cursive;
   }
   
   .menu a {
+    font-size: 20px;
     padding: 10px;
     display: block;
   }
@@ -59,8 +60,7 @@ body {
   
   a {
     color: white;
-    text-decoration: none;
-    font-family: Arial;
+    text-decoration: none;  
   }
   
   a:hover {
@@ -72,18 +72,34 @@ body {
     color: MAROON;
     border-color: black;
     text-align: center;
+    font-family: 'Lobster Two', cursive;
    }
   
   .site-title {
-    font-size: 3em;
+    font-size: 4em;
   }
 
   .site-subtitle {
     font-style: italic;
+    font-size: 2em;
   }
 
-  .image-portfolio,
-  .image-sobre {
+  .image-sobre,
+  .image-projetos {
     height: 180px;
-    width: 180px;
+    width: 380px;
+    object-fit: cover;
+  }
+
+  .opcoes {
+    font-family: 'Lobster Two', cursive;
+    padding: 20px;   
+  }
+  
+  figure {
+    margin-bottom: 50px;
+  }
+
+  h2 {
+    margin-bottom: 10px;
   }
