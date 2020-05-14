@@ -1,14 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
-    background-image: url("https://s27389.pcdn.co/wp-content/uploads/2017/01/AdobeStock_5557101.jpeg");
-    background-size: 100vw 110vh;
+    background-image: url('../IMG/papel-de-parede-adesivo-chevron-zig-zag-azul-deg-1000x1000.jpg');
+    background-size: 210vh 120vw;
     height: 100vh;
     font-family: Lucida sans;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 16px;
   }
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-size: 20px;
+  }
+}
   
   .menu {
-    background-color: black;
+    background-color: STEELBLUE;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
+  .menu a {
+    padding: 10px;
+    display: block;
+  }
+
   .menu li {
     list-style: none;
   }
@@ -21,6 +60,7 @@ body {
   a {
     color: white;
     text-decoration: none;
+    font-family: Arial;
   }
   
   a:hover {
@@ -29,10 +69,21 @@ body {
   
   .site-title,
   .site-subtitle {
-    color: black;
+    color: MAROON;
+    border-color: black;
     text-align: center;
-  }
+   }
   
+  .site-title {
+    font-size: 3em;
+  }
+
   .site-subtitle {
     font-style: italic;
+  }
+
+  .image-portfolio,
+  .image-sobre {
+    height: 180px;
+    width: 180px;
   }
